@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order | The Paratha Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="announcement">Freshly cooked • Handmade with love • Birmingham & surrounding areas</div>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">TPC</span><span><strong>The Paratha</strong><em>Club</em></span></a><button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="flavours.html">Flavours</a><a href="about.html">Our Story</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a><a class="nav-order active-order" href="order.html">Order now <span>→</span></a></nav></header>
+
+<main>
+<section class="page-hero compact"><p class="eyebrow">JOIN THE CLUB</p><h1>Build your box.</h1><p>Choose your food, tell us how you're getting it, then review your order. Secure payment will be connected in the final build.</p></section>
+
+<section class="section checkout-shell">
+<div class="progress"><div class="progress-step active" data-step-label="1"><span>1</span><b>Food</b></div><i></i><div class="progress-step" data-step-label="2"><span>2</span><b>Fulfilment</b></div><i></i><div class="progress-step" data-step-label="3"><span>3</span><b>Your details</b></div><i></i><div class="progress-step" data-step-label="4"><span>4</span><b>Review</b></div></div>
+
+<div class="checkout-grid">
+<div class="checkout-main">
+<div class="checkout-step active" data-step="1">
+<p class="step-kicker">STEP 1 OF 4</p><h2>Build your box.</h2>
+<label>Choose your box</label>
+<div class="choice-grid"><button type="button" class="choice selected" data-price="18" data-box="The Club Box" data-limit="2"><span>The Club Box</span><b>£18</b><small>4 parathas · up to 2 flavours</small></button><button type="button" class="choice" data-price="34" data-box="The Family Club Box" data-limit="3"><span>The Family Club Box</span><b>£34</b><small>8 parathas · up to 3 flavours</small></button></div>
+<label>Choose your flavours</label>
+<div class="flavour-grid"><button type="button" class="flavour">Aloo <span>+</span></button><button type="button" class="flavour">Paneer <span>+</span></button><button type="button" class="flavour">Gobi <span>+</span></button><button type="button" class="flavour">Cheese & Chilli <span>+</span></button><button type="button" class="flavour">Methi <span>+</span></button><button type="button" class="flavour">Seasonal <span>+</span></button></div>
+<p class="selection-note" id="selection-note">Choose up to 2 flavours for this box.</p>
+<label>Quantity</label><div class="quantity-row"><button type="button" id="minus">−</button><strong id="qty">1</strong><button type="button" id="plus">+</button><span>box</span></div>
+<button type="button" class="btn btn-primary next-step" data-next="2">Continue <span>→</span></button>
+</div>
+
+<div class="checkout-step" data-step="2">
+<p class="step-kicker">STEP 2 OF 4</p><h2>How should we get it to you?</h2>
+<label>Choose an option</label>
+<div class="fulfil-grid"><button type="button" class="fulfil selected" data-method="Collection" data-fee="0"><span>Collection</span><b>FREE</b><small>We'll confirm the collection details with you.</small></button><button type="button" class="fulfil" data-method="Delivery" data-fee="3.5"><span>Local delivery</span><b>£3.50</b><small>Delivery availability and postcode checks can be connected next.</small></button></div>
+<label>Preferred date</label><input class="wide-input" id="date" type="date">
+<label>Preferred time</label><select class="wide-input" id="time"><option value="">Select a time</option><option>12:00–13:00</option><option>13:00–14:00</option><option>17:00–18:00</option><option>18:00–19:00</option><option>19:00–20:00</option></select>
+<div class="step-actions"><button type="button" class="btn btn-ghost prev-step" data-prev="1">← Back</button><button type="button" class="btn btn-primary next-step" data-next="3">Continue <span>→</span></button></div>
+</div>
+
+<div class="checkout-step" data-step="3">
+<p class="step-kicker">STEP 3 OF 4</p><h2>Your details.</h2>
+<div class="form-row"><input id="name" placeholder="Full name"><input id="phone" type="tel" placeholder="Phone number"></div>
+<input class="wide-input" id="email" type="email" placeholder="Email address">
+<input class="wide-input" id="postcode" placeholder="Postcode">
+<textarea id="notes" placeholder="Anything we should know?"></textarea>
+<div class="allergen"><strong>Allergen notice</strong><p>We prepare food in a domestic kitchen where multiple allergens are handled. Please contact us before ordering if you have a food allergy. We may be unable to safely accommodate severe allergies.</p></div>
+<div class="step-actions"><button type="button" class="btn btn-ghost prev-step" data-prev="2">← Back</button><button type="button" class="btn btn-primary next-step" data-next="4">Review order <span>→</span></button></div>
+</div>
+
+<div class="checkout-step" data-step="4">
+<p class="step-kicker">STEP 4 OF 4</p><h2>Check everything.</h2>
+<div class="review-card">
+<div><span>Box</span><strong id="review-box">—</strong></div>
+<div><span>Flavours</span><strong id="review-flavours">—</strong></div>
+<div><span>Quantity</span><strong id="review-qty">—</strong></div>
+<div><span>Fulfilment</span><strong id="review-method">—</strong></div>
+<div><span>Date / time</span><strong id="review-slot">—</strong></div>
+<div><span>Customer</span><strong id="review-customer">—</strong></div>
+</div>
+<div class="step-actions"><button type="button" class="btn btn-ghost prev-step" data-prev="3">← Back</button><button type="button" class="btn btn-primary" id="checkout">Continue to secure payment <span>→</span></button></div>
+<p class="secure-note">🔒 Payment isn't connected yet. This button is the future hand-off to the secure payment provider.</p>
+</div>
+</div>
+
+<aside class="order-summary"><p class="eyebrow">YOUR ORDER</p><h3 id="summary-box">The Club Box</h3><div class="summary-line"><span>Box</span><strong id="summary-price">£18</strong></div><div class="summary-line"><span>Flavours</span><strong id="summary-flavours">0 selected</strong></div><div class="summary-line"><span>Quantity</span><strong id="summary-qty">1</strong></div><div class="summary-line"><span>Delivery</span><strong id="summary-delivery">FREE</strong></div><hr><div class="summary-total"><span>Total</span><strong id="summary-total">£18</strong></div><small>Final payment will be processed securely once checkout is connected.</small></aside>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">TPC</span><span><strong>The Paratha</strong><em>Club</em></span></a><p>Handmade Indian comfort food,<br>one paratha at a time.</p></div><div class="footer-links"><div><b>Explore</b><a href="menu.html">Menu</a><a href="flavours.html">Flavours</a><a href="about.html">Our Story</a><a href="faq.html">FAQs</a></div><div><b>Help</b><a href="contact.html">Contact</a><a href="order.html">Order</a></div></div><div class="footer-bottom"><span>© 2026 The Paratha Club</span><span>Made with ♥</span></div></footer>
+<script src="js/main.js"></script>
+</body></html>
