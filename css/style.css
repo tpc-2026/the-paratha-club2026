@@ -23,7 +23,6 @@ nav a{position:relative}
 nav a:not(.nav-order):after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:#c42e67;transition:right .2s ease}
 nav a:not(.nav-order):hover:after,nav a.active:not(.nav-order):after{right:0}
 .hero{isolation:isolate}
-.hero:before{content:"";position:absolute;inset:auto auto 8% 5%;width:130px;height:130px;border:1px dashed #c42e6766;border-radius:50%;z-index:-1}
 .hero-copy{animation:fadeUp .75s ease both}
 .hero-art{animation:fadeIn .9s .1s ease both}
 .btn{transition:transform .18s ease,box-shadow .18s ease}
